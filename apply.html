@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Bright Minds Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Bright Minds</span> Academy
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="btn btn-outline active">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Application Process</h1>
+            <p class="page-subtitle fade-in" style="animation-delay: 0.2s;">Join the Bright Minds Academy community</p>
+        </div>
+    </header>
+
+    <!-- Application Process Steps -->
+    <section class="process-steps">
+        <div class="container">
+            <h2 class="section-title">Application Process in 5 Easy Steps</h2>
+            <p class="section-subtitle">Follow these steps to complete your application to Bright Minds Academy</p>
+            
+            <div class="steps-container">
+                <div class="steps-timeline">
+                    <div class="step-card fade-in">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Inquiry & Campus Tour</h3>
+                            <p>Submit an inquiry form and schedule a campus tour to learn more about our programs and community.</p>
+                            <a href="#inquiry" class="step-link">Start Inquiry <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card fade-in" style="animation-delay: 0.1s;">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Submit Application</h3>
+                            <p>Complete the online application form and pay the application fee.</p>
+                            <a href="#application" class="step-link">Begin Application <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card fade-in" style="animation-delay: 0.2s;">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Submit Documents</h3>
+                            <p>Provide academic records, teacher recommendations, and any required test scores.</p>
+                            <a href="#documents" class="step-link">View Requirements <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card fade-in" style="animation-delay: 0.3s;">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Student Assessment</h3>
+                            <p>Complete age-appropriate assessments and interviews (for some grade levels).</p>
+                            <a href="#assessment" class="step-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card fade-in" style="animation-delay: 0.4s;">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Admission Decision</h3>
+                            <p>Receive your admission decision and complete enrollment if accepted.</p>
+                            <a href="#decision" class="step-link">Timeline <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form" id="application">
+        <div class="container">
+            <div class="form-header">
+                <h2 class="section-title">Online Application</h2>
+                <p class="section-subtitle">Complete the form below to start your application process</p>
+                <div class="form-progress">
+                    <div class="progress-steps">
+                        <div class="progress-step active" data-step="1">Student Info</div>
+                        <div class="progress-step" data-step="2">Parent Info</div>
+                        <div class="progress-step" data-step="3">Academic Info</div>
+                        <div class="progress-step" data-step="4">Review & Submit</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Multi-step Form -->
+            <form id="multiStepForm" class="multi-step-form">
+                <!-- Step 1: Student Information -->
+                <div class="form-step active" id="step1">
+                    <h3>Student Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthDate">Date of Birth *</label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gradeLevel">Applying for Grade Level *</label>
+                            <select id="gradeLevel" name="gradeLevel" required>
+                                <option value="">Select Grade</option>
+                                <option value="preschool">Preschool</option>
+                                <option value="kindergarten">Kindergarten</option>
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="startTerm">Desired Start Term *</label>
+                            <select id="startTerm" name="startTerm" required>
+                                <option value="">Select Term</option>
+                                <option value="fall-2024">Fall 2024</option>
+                                <option value="spring-2025">Spring 2025</option>
+                                <option value="fall-2025">Fall 2025</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="currentSchool">Current School</label>
+                        <input type="text" id="currentSchool" name="currentSchool">
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-secondary next-step" data-next="2">Next: Parent Information <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Parent/Guardian Information -->
+                <div class="form-step" id="step2">
+                    <h3>Parent/Guardian Information</h3>
+                    
+                    <div class="form-section">
+                        <h4>Primary Parent/Guardian</h4>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentFirstName">First Name *</label>
+                                <input type="text" id="parentFirstName" name="parentFirstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parentLastName">Last Name *</label>
+                                <input type="text" id="parentLastName" name="parentLastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentEmail">Email Address *</label>
+                                <input type="email" id="parentEmail" name="parentEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parentPhone">Phone Number *</label>
+                                <input type="tel" id="parentPhone" name="parentPhone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parentRelationship">Relationship to Student *</label>
+                            <select id="parentRelationship" name="parentRelationship" required>
+                                <option value="">Select</option>
+                                <option value="mother">Mother</option>
+                                <option value="father">Father</option>
+                                <option value="guardian">Guardian</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Secondary Parent/Guardian (Optional)</h4>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent2FirstName">First Name</label>
+                                <input type="text" id="parent2FirstName" name="parent2FirstName">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parent2LastName">Last Name</label>
+                                <input type="text" id="parent2LastName" name="parent2LastName">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent2Email">Email Address</label>
+                                <input type="email" id="parent2Email" name="parent2Email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="parent2Phone">Phone Number</label>
+                                <input type="tel" id="parent2Phone" name="parent2Phone">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="homeAddress">Home Address *</label>
+                        <textarea id="homeAddress" name="homeAddress" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="1"><i class="fas fa-arrow-left"></i> Back</button>
+                        <button type="button" class="btn btn-secondary next-step" data-next="3">Next: Academic Information <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Academic Information -->
+                <div class="form-step" id="step3">
+                    <h3>Academic Information</h3>
+                    
+                    <div class="form-section">
+                        <h4>Previous Academic History</h4>
+                        
+                        <div class="form-group">
+                            <label for="yearsAtCurrentSchool">Years at Current School</label>
+                            <select id="yearsAtCurrentSchool" name="yearsAtCurrentSchool">
+                                <option value="">Select</option>
+                                <option value="1">1 year</option>
+                                <option value="2">2 years</option>
+                                <option value="3">3 years</option>
+                                <option value="4">4+ years</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="academicInterests">Academic Interests & Strengths</label>
+                            <textarea id="academicInterests" name="academicInterests" rows="3" placeholder="Please describe the student's academic interests, strengths, and areas of particular talent..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Extracurricular Activities</h4>
+                        
+                        <div class="form-group">
+                            <label>Select activities the student is interested in (select all that apply)</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="sports" name="extracurricular[]" value="sports">
+                                    <label for="sports">Sports/Athletics</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="music" name="extracurricular[]" value="music">
+                                    <label for="music">Music (band, choir, orchestra)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="art" name="extracurricular[]" value="art">
+                                    <label for="art">Visual Arts</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="theater" name="extracurricular[]" value="theater">
+                                    <label for="theater">Theater/Drama</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="stem" name="extracurricular[]" value="stem">
+                                    <label for="stem">STEM Clubs (robotics, coding, etc.)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="debate" name="extracurricular[]" value="debate">
+                                    <label for="debate">Debate/Public Speaking</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="community" name="extracurricular[]" value="community">
+                                    <label for="community">Community Service</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="other-activities" name="extracurricular[]" value="other">
+                                    <label for="other-activities">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Additional Information</h4>
+                        
+                        <div class="form-group">
+                            <label for="specialNeeds">Special Educational Needs</label>
+                            <textarea id="specialNeeds" name="specialNeeds" rows="3" placeholder="Please provide information about any special educational needs, accommodations, or learning differences..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="whyBrightMinds">Why Bright Minds Academy? *</label>
+                            <textarea id="whyBrightMinds" name="whyBrightMinds" rows="4" required placeholder="Please explain why you are interested in Bright Minds Academy for the student's education..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="2"><i class="fas fa-arrow-left"></i> Back</button>
+                        <button type="button" class="btn btn-secondary next-step" data-next="4">Next: Review & Submit <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Review & Submit -->
+                <div class="form-step" id="step4">
+                    <h3>Review Your Application</h3>
+                    
+                    <div class="review-summary">
+                        <div class="review-section">
+                            <h4>Student Information</h4>
+                            <div id="review-student" class="review-content">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="review-section">
+                            <h4>Parent Information</h4>
+                            <div id="review-parent" class="review-content">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="review-section">
+                            <h4>Academic Information</h4>
+                            <div id="review-academic" class="review-content">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Application Agreement</h4>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">I certify that the information provided in this application is true and complete to the best of my knowledge. I understand that providing false information may result in denial of admission or dismissal from Bright Minds Academy. *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I have read and agree to the <a href="#">Privacy Policy</a> and understand how my personal information will be used in the admissions process. *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="communications" name="communications">
+                                <label for="communications">I agree to receive communications from Bright Minds Academy regarding admissions, events, and school updates.</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-outline prev-step" data-prev="3"><i class="fas fa-arrow-left"></i> Back</button>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </div>
+                </div>
+                
+                <!-- Success Message (hidden initially) -->
+                <div class="form-success" id="successMessage" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Application Submitted Successfully!</h3>
+                    <p>Thank you for applying to Bright Minds Academy. We have received your application and will review it shortly.</p>
+                    <p>You will receive a confirmation email with your application ID and next steps within 24 hours.</p>
+                    <p><strong>Application ID:</strong> <span id="applicationId">BMA-2024-00123</span></p>
+                    <div class="success-actions">
+                        <a href="index.html" class="btn btn-secondary">Return to Homepage</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Admissions</a>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="form-disclaimer">
+                <p><i class="fas fa-info-circle"></i> <strong>Application Fee:</strong> A non-refundable application fee of $75 is required to process your application. You will be directed to the payment page after submitting this form.</p>
+                <p><i class="fas fa-clock"></i> <strong>Processing Time:</strong> Applications are typically processed within 10-14 business days. You will be notified of any missing documents.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements & Deadlines -->
+    <section class="requirements" id="documents">
+        <div class="container">
+            <h2 class="section-title">Application Requirements & Deadlines</h2>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card fade-in">
+                    <div class="requirement-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Required Documents</h3>
+                    <ul>
+                        <li>Completed application form</li>
+                        <li>Birth certificate or passport copy</li>
+                        <li>Recent photograph of student</li>
+                        <li>Academic records from previous 2 years</li>
+                        <li>Teacher recommendations (2 required)</li>
+                        <li>Standardized test scores (if available)</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="requirement-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Application Deadlines</h3>
+                    <ul>
+                        <li><strong>Priority Deadline:</strong> January 15, 2024</li>
+                        <li><strong>Regular Deadline:</strong> March 1, 2024</li>
+                        <li><strong>Rolling Admissions:</strong> After March 1 (space available)</li>
+                        <li><strong>Financial Aid Deadline:</strong> February 1, 2024</li>
+                        <li><strong>Decision Notification:</strong> By April 1, 2024</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="requirement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Assessment Process</h3>
+                    <ul>
+                        <li>Grades K-2: Play-based assessment</li>
+                        <li>Grades 3-5: Academic screening</li>
+                        <li>Grades 6-8: Entrance exam & interview</li>
+                        <li>Grades 9-12: Transcript review & interview</li>
+                        <li>All grades: Parent interview</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Aid -->
+    <section class="financial-aid">
+        <div class="container">
+            <div class="aid-container">
+                <div class="aid-content slide-in-left">
+                    <h2 class="section-title">Financial Aid & Scholarships</h2>
+                    <p>Bright Minds Academy is committed to making our education accessible to qualified students regardless of financial circumstances. We offer need-based financial aid and merit scholarships.</p>
+                    
+                    <div class="aid-features">
+                        <div class="aid-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Need-based financial aid available</span>
+                        </div>
+                        <div class="aid-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Merit scholarships for exceptional students</span>
+                        </div>
+                        <div class="aid-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sibling discounts available</span>
+                        </div>
+                        <div class="aid-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Flexible payment plans</span>
+                        </div>
+                    </div>
+                    
+                    <p>To apply for financial aid, complete the <a href="#">Financial Aid Application</a> by February 1, 2024. Financial aid decisions are made independently from admission decisions.</p>
+                    
+                    <a href="#" class="btn btn-primary">Learn About Financial Aid</a>
+                </div>
+                
+                <div class="aid-stats slide-in-right">
+                    <div class="stat-card">
+                        <h3>35%</h3>
+                        <p>of students receive financial aid</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>$1.2M</h3>
+                        <p>in financial aid awarded annually</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>merit scholarships available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Application FAQs</h2>
+            <p class="section-subtitle">Common questions about the application process</p>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>What is the application fee and is it refundable?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The application fee is $75 and is non-refundable. This fee covers the cost of processing your application, including document review and assessment administration. Fee waivers are available for families with demonstrated financial need.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                    <button class="faq-question">
+                        <span>Can I apply for multiple children at once?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can apply for multiple children using the same parent account. Each child will need a separate application, but you can use the same login to manage all applications. Sibling applications are reviewed together when possible.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.2s;">
+                    <button class="faq-question">
+                        <span>How are admission decisions made?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Admission decisions are based on a holistic review of each applicant. We consider academic records, teacher recommendations, assessment results, extracurricular involvement, and alignment with our school's mission and values. We also consider the applicant's potential to contribute to and benefit from our educational community.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.3s;">
+                    <button class="faq-question">
+                        <span>What if I miss the application deadline?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept applications on a rolling basis after the regular deadline, subject to space availability. Late applications are considered as spaces become available. However, financial aid may be limited for late applicants, so we encourage submitting by the priority deadline if possible.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.4s;">
+                    <button class="faq-question">
+                        <span>When will I receive an admission decision?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For applications submitted by the priority deadline (January 15), decisions are typically released by March 15. For regular deadline applications (March 1), decisions are released by April 1. Rolling admission decisions are typically made within 2-3 weeks of completing the application process.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-contact">
+                <p>Still have questions? <a href="contact.html">Contact our Admissions Office</a> or call (555) 123-4568.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Bright Minds</span> Academy
+                    </a>
+                    <p class="footer-text">Providing excellence in education since 1995. Preparing students for a bright future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Admissions</h3>
+                    <ul>
+                        <li><a href="apply.html">Application Process</a></li>
+                        <li><a href="#requirements">Requirements</a></li>
+                        <li><a href="#financial-aid">Financial Aid</a></li>
+                        <li><a href="schedule.html#events">Open Houses</a></li>
+                        <li><a href="contact.html">Schedule a Tour</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                         <li><i class="fas fa-map-marker-alt"></i> KVDA, Eldoret, Kenya</li>
+                        <li><i class="fas fa-phone"></i> + 2547 675 890</li>
+                        <li><i class="fas fa-envelope"></i> info@brightminds.edu</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application-specific JS -->
+    <script>
+        // Application-specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Multi-step form functionality
+            const formSteps = document.querySelectorAll('.form-step');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const progressFill = document.querySelector('.progress-fill');
+            const nextButtons = document.querySelectorAll('.next-step');
+            const prevButtons = document.querySelectorAll('.prev-step');
+            const multiStepForm = document.getElementById('multiStepForm');
+            
+            let currentStep = 1;
+            
+            // Next button click handler
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStepElement = document.getElementById(`step${currentStep}`);
+                    const nextStep = parseInt(this.getAttribute('data-next'));
+                    
+                    // Validate current step before proceeding
+                    if (validateStep(currentStep)) {
+                        // Hide current step
+                        currentStepElement.classList.remove('active');
+                        
+                        // Show next step
+                        document.getElementById(`step${nextStep}`).classList.add('active');
+                        
+                        // Update progress
+                        updateProgress(nextStep);
+                        
+                        // Update current step
+                        currentStep = nextStep;
+                        
+                        // If moving to review step, populate review summary
+                        if (nextStep === 4) {
+                            populateReviewSummary();
+                        }
+                    }
+                });
+            });
+            
+            // Previous button click handler
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const currentStepElement = document.getElementById(`step${currentStep}`);
+                    const prevStep = parseInt(this.getAttribute('data-prev'));
+                    
+                    // Hide current step
+                    currentStepElement.classList.remove('active');
+                    
+                    // Show previous step
+                    document.getElementById(`step${prevStep}`).classList.add('active');
+                    
+                    // Update progress
+                    updateProgress(prevStep);
+                    
+                    // Update current step
+                    currentStep = prevStep;
+                });
+            });
+            
+            // Update progress bar and steps
+            function updateProgress(step) {
+                // Update progress bar width
+                const percentage = (step - 1) * 33.33;
+                progressFill.style.width = `${percentage}%`;
+                
+                // Update step indicators
+                progressSteps.forEach((progressStep, index) => {
+                    if (index < step) {
+                        progressStep.classList.add('active');
+                    } else {
+                        progressStep.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Validate form step
+            function validateStep(step) {
+                const currentStepElement = document.getElementById(`step${step}`);
+                const requiredFields = currentStepElement.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                        
+                        // Add error message if not already present
+                        if (!field.nextElementSibling || !field.nextElementSibling.classList.contains('error-message')) {
+                            const errorMessage = document.createElement('div');
+                            errorMessage.className = 'error-message';
+                            errorMessage.textContent = 'This field is required';
+                            errorMessage.style.color = '#ef4444';
+                            errorMessage.style.fontSize = '0.85rem';
+                            errorMessage.style.marginTop = '5px';
+                            field.parentNode.appendChild(errorMessage);
+                        }
+                    } else {
+                        field.classList.remove('error');
+                        
+                        // Remove error message if present
+                        if (field.nextElementSibling && field.nextElementSibling.classList.contains('error-message')) {
+                            field.nextElementSibling.remove();
+                        }
+                        
+                        // Validate email format
+                        if (field.type === 'email' && field.value.trim()) {
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailRegex.test(field.value.trim())) {
+                                isValid = false;
+                                field.classList.add('error');
+                                
+                                if (!field.nextElementSibling || !field.nextElementSibling.classList.contains('error-message')) {
+                                    const errorMessage = document.createElement('div');
+                                    errorMessage.className = 'error-message';
+                                    errorMessage.textContent = 'Please enter a valid email address';
+                                    errorMessage.style.color = '#ef4444';
+                                    errorMessage.style.fontSize = '0.85rem';
+                                    errorMessage.style.marginTop = '5px';
+                                    field.parentNode.appendChild(errorMessage);
+                                }
+                            }
+                        }
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            // Populate review summary
+            function populateReviewSummary() {
+                // Student Information
+                const studentInfo = `
+                    <p><strong>Name:</strong> ${document.getElementById('firstName').value} ${document.getElementById('lastName').value}</p>
+                    <p><strong>Date of Birth:</strong> ${document.getElementById('birthDate').value}</p>
+                    <p><strong>Grade Applying For:</strong> ${document.getElementById('gradeLevel').options[document.getElementById('gradeLevel').selectedIndex].text}</p>
+                    <p><strong>Start Term:</strong> ${document.getElementById('startTerm').options[document.getElementById('startTerm').selectedIndex].text}</p>
+                    <p><strong>Current School:</strong> ${document.getElementById('currentSchool').value || 'Not provided'}</p>
+                `;
+                document.getElementById('review-student').innerHTML = studentInfo;
+                
+                // Parent Information
+                const parentInfo = `
+                    <p><strong>Primary Parent:</strong> ${document.getElementById('parentFirstName').value} ${document.getElementById('parentLastName').value}</p>
+                    <p><strong>Email:</strong> ${document.getElementById('parentEmail').value}</p>
+                    <p><strong>Phone:</strong> ${document.getElementById('parentPhone').value}</p>
+                    <p><strong>Relationship:</strong> ${document.getElementById('parentRelationship').options[document.getElementById('parentRelationship').selectedIndex].text}</p>
+                    ${document.getElementById('parent2FirstName').value ? `<p><strong>Secondary Parent:</strong> ${document.getElementById('parent2FirstName').value} ${document.getElementById('parent2LastName').value}</p>` : ''}
+                    <p><strong>Address:</strong> ${document.getElementById('homeAddress').value}</p>
+                `;
+                document.getElementById('review-parent').innerHTML = parentInfo;
+                
+                // Academic Information
+                const extracurricular = [];
+                document.querySelectorAll('input[name="extracurricular[]"]:checked').forEach(cb => {
+                    extracurricular.push(cb.nextElementSibling.textContent);
+                });
+                
+                const academicInfo = `
+                    <p><strong>Academic Interests:</strong> ${document.getElementById('academicInterests').value || 'Not provided'}</p>
+                    <p><strong>Extracurricular Activities:</strong> ${extracurricular.length > 0 ? extracurricular.join(', ') : 'None selected'}</p>
+                    <p><strong>Special Needs:</strong> ${document.getElementById('specialNeeds').value || 'Not provided'}</p>
+                    <p><strong>Why Bright Minds:</strong> ${document.getElementById('whyBrightMinds').value}</p>
+                `;
+                document.getElementById('review-academic').innerHTML = academicInfo;
+            }
+            
+            // Form submission
+            multiStepForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Validate final step
+                if (validateStep(4)) {
+                    // Generate a random application ID
+                    const appId = 'BMA-' + new Date().getFullYear() + '-' + Math.floor(10000 + Math.random() * 90000);
+                    document.getElementById('applicationId').textContent = appId;
+                    
+                    // Hide form and show success message
+                    document.querySelectorAll('.form-step').forEach(step => {
+                        step.style.display = 'none';
+                    });
+                    document.getElementById('successMessage').style.display = 'block';
+                    
+                    // In a real application, you would send the form data to a server here
+                    console.log('Application submitted with ID:', appId);
+                    
+                    // Scroll to success message
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+            
+            // Real-time field validation
+            const formInputs = document.querySelectorAll('input, textarea, select');
+            formInputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.hasAttribute('required') && !this.value.trim()) {
+                        this.classList.add('error');
+                    } else {
+                        this.classList.remove('error');
+                    }
+                });
+                
+                input.addEventListener('input', function() {
+                    this.classList.remove('error');
+                });
+            });
+            
+            // Generate a random application ID for display
+            function generateApplicationId() {
+                const year = new Date().getFullYear();
+                const randomNum = Math.floor(10000 + Math.random() * 90000);
+                return `BMA-${year}-${randomNum}`;
+            }
+        });
+    </script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

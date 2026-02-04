@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Bright Minds Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Bright Minds</span> Academy
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="btn btn-outline">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Academic Programs</h1>
+            <p class="page-subtitle fade-in" style="animation-delay: 0.2s;">Comprehensive educational pathways for every student</p>
+        </div>
+    </header>
+
+    <!-- Programs Navigation -->
+    <section class="programs-nav">
+        <div class="container">
+            <div class="program-tabs">
+                <button class="program-tab active" data-target="elementary">Elementary School</button>
+                <button class="program-tab" data-target="middle">Middle School</button>
+                <button class="program-tab" data-target="high">High School</button>
+                <button class="program-tab" data-target="extracurricular">Extracurricular</button>
+                <button class="program-tab" data-target="advanced">Advanced Placement</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Content -->
+    <section class="programs-content">
+        <div class="container">
+            <!-- Elementary School -->
+            <div class="program-section active" id="elementary">
+                <div class="program-header">
+                    <h2>Elementary School (K-5)</h2>
+                    <p>Building strong foundations for lifelong learning</p>
+                </div>
+                
+                <div class="program-details">
+                    <div class="program-image slide-in-left">
+                        <div class="image-container">
+                            <div class="floating-element">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-info slide-in-right">
+                        <h3>Overview</h3>
+                        <p>Our elementary program focuses on developing fundamental skills in literacy, numeracy, and social development. We create a nurturing environment where curiosity is encouraged and each child's unique abilities are recognized.</p>
+                        
+                        <div class="program-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Integrated reading and writing curriculum</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hands-on mathematics with manipulatives</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Science exploration through experiments</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Social studies focusing on community</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Arts, music, and physical education</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Social-emotional learning programs</span>
+                            </div>
+                        </div>
+                        
+                        <a href="schedule.html" class="btn btn-primary">View Sample Schedule</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle School -->
+            <div class="program-section" id="middle">
+                <div class="program-header">
+                    <h2>Middle School (6-8)</h2>
+                    <p>Navigating the transition with academic and social support</p>
+                </div>
+                
+                <div class="program-details">
+                    <div class="program-image slide-in-left">
+                        <div class="image-container">
+                            <div class="floating-element">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-info slide-in-right">
+                        <h3>Overview</h3>
+                        <p>Our middle school program helps students navigate early adolescence while building critical thinking skills and subject-area expertise. We offer a balanced curriculum that challenges students while providing appropriate support.</p>
+                        
+                        <div class="program-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Departmentalized subject instruction</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>STEM labs and project-based learning</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Foreign language options</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advisory program for social guidance</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Elective exploration in arts and technology</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Extracurricular clubs and athletics</span>
+                            </div>
+                        </div>
+                        
+                        <a href="schedule.html" class="btn btn-primary">View Sample Schedule</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- High School -->
+            <div class="program-section" id="high">
+                <div class="program-header">
+                    <h2>High School (9-12)</h2>
+                    <p>College preparatory curriculum with diverse pathways</p>
+                </div>
+                
+                <div class="program-details">
+                    <div class="program-image slide-in-left">
+                        <div class="image-container">
+                            <div class="floating-element">
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-info slide-in-right">
+                        <h3>Overview</h3>
+                        <p>Our comprehensive high school program prepares students for college and career success. With a wide range of courses, advanced placement options, and college counseling, students are supported in achieving their post-secondary goals.</p>
+                        
+                        <div class="program-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>College preparatory curriculum</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advanced Placement and Honors courses</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Comprehensive college counseling</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Career exploration and internships</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Extensive elective offerings</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Leadership and service opportunities</span>
+                            </div>
+                        </div>
+                        
+                        <a href="schedule.html" class="btn btn-primary">View Sample Schedule</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Extracurricular -->
+            <div class="program-section" id="extracurricular">
+                <div class="program-header">
+                    <h2>Extracurricular Activities</h2>
+                    <p>Developing talents and interests beyond the classroom</p>
+                </div>
+                
+                <div class="program-details">
+                    <div class="program-image slide-in-left">
+                        <div class="image-container">
+                            <div class="floating-element">
+                                <i class="fas fa-music"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-info slide-in-right">
+                        <h3>Overview</h3>
+                        <p>We believe that education extends beyond the classroom. Our extensive extracurricular program offers students opportunities to explore interests, develop talents, and build leadership skills through clubs, arts, and athletics.</p>
+                        
+                        <div class="activity-categories">
+                            <div class="category">
+                                <h4><i class="fas fa-paint-brush"></i> Arts</h4>
+                                <ul>
+                                    <li>Visual Arts Club</li>
+                                    <li>Choir and Band</li>
+                                    <li>Theater Productions</li>
+                                    <li>Photography Club</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="category">
+                                <h4><i class="fas fa-robot"></i> STEM</h4>
+                                <ul>
+                                    <li>Robotics Team</li>
+                                    <li>Math Olympiad</li>
+                                    <li>Science Club</li>
+                                    <li>Coding Club</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="category">
+                                <h4><i class="fas fa-running"></i> Athletics</h4>
+                                <ul>
+                                    <li>Basketball, Soccer, Volleyball</li>
+                                    <li>Track and Field</li>
+                                    <li>Swimming</li>
+                                    <li>Cheerleading</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="category">
+                                <h4><i class="fas fa-hands-helping"></i> Leadership</h4>
+                                <ul>
+                                    <li>Student Government</li>
+                                    <li>Debate Team</li>
+                                    <li>Community Service Club</li>
+                                    <li>School Newspaper</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary">Join a Club</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Advanced Placement -->
+            <div class="program-section" id="advanced">
+                <div class="program-header">
+                    <h2>Advanced Placement Program</h2>
+                    <p>College-level courses for motivated students</p>
+                </div>
+                
+                <div class="program-details">
+                    <div class="program-image slide-in-left">
+                        <div class="image-container">
+                            <div class="floating-element">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="program-info slide-in-right">
+                        <h3>Overview</h3>
+                        <p>Our Advanced Placement program allows motivated high school students to pursue college-level studies while still in high school. Students can earn college credit and stand out in the college admissions process.</p>
+                        
+                        <div class="ap-courses">
+                            <h4>Available AP Courses</h4>
+                            <div class="courses-grid">
+                                <div class="course">AP Biology</div>
+                                <div class="course">AP Calculus AB/BC</div>
+                                <div class="course">AP Chemistry</div>
+                                <div class="course">AP Computer Science</div>
+                                <div class="course">AP English Literature</div>
+                                <div class="course">AP Environmental Science</div>
+                                <div class="course">AP European History</div>
+                                <div class="course">AP Physics</div>
+                                <div class="course">AP Psychology</div>
+                                <div class="course">AP Spanish</div>
+                                <div class="course">AP Statistics</div>
+                                <div class="course">AP US History</div>
+                            </div>
+                        </div>
+                        
+                        <div class="ap-stats">
+                            <div class="ap-stat">
+                                <h3>92%</h3>
+                                <p>AP Exam Pass Rate</p>
+                            </div>
+                            <div class="ap-stat">
+                                <h3>65%</h3>
+                                <p>Students in AP Courses</p>
+                            </div>
+                            <div class="ap-stat">
+                                <h3>4.2</h3>
+                                <p>Average AP Score</p>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary">Learn About Eligibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Bright Minds</span> Academy
+                    </a>
+                    <p class="footer-text">Providing excellence in education since 1995. Preparing students for a bright future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#elementary">Elementary School</a></li>
+                        <li><a href="#middle">Middle School</a></li>
+                        <li><a href="#high">High School</a></li>
+                        <li><a href="#extracurricular">Extracurricular</a></li>
+                        <li><a href="#advanced">Advanced Placement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                         <li><i class="fas fa-map-marker-alt"></i> KVDA, Eldoret, Kenya</li>
+                        <li><i class="fas fa-phone"></i> + 2547 675 890</li>
+                        <li><i class="fas fa-envelope"></i> info@brightminds.edu</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

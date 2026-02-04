@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Schedule | Bright Minds Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Bright Minds</span> Academy
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="schedule.html" class="active">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="btn btn-outline">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">School Schedules</h1>
+            <p class="page-subtitle fade-in" style="animation-delay: 0.2s;">Academic calendars, daily schedules, and important dates</p>
+        </div>
+    </header>
+
+    <!-- Schedule Navigation -->
+    <section class="schedule-nav">
+        <div class="container">
+            <div class="schedule-tabs">
+                <button class="schedule-tab active" data-target="daily">Daily Schedule</button>
+                <button class="schedule-tab" data-target="academic">Academic Calendar</button>
+                <button class="schedule-tab" data-target="bell">Bell Schedule</button>
+                <button class="schedule-tab" data-target="events">Events Calendar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Content -->
+    <section class="schedule-content">
+        <div class="container">
+            <!-- Daily Schedule -->
+            <div class="schedule-section active" id="daily">
+                <h2 class="section-title">Daily Schedule by Grade Level</h2>
+                <p class="section-subtitle">Typical school day structure for each division</p>
+                
+                <div class="grade-selector">
+                    <button class="grade-btn active" data-grade="elementary">Elementary (K-5)</button>
+                    <button class="grade-btn" data-grade="middle">Middle School (6-8)</button>
+                    <button class="grade-btn" data-grade="high">High School (9-12)</button>
+                </div>
+                
+                <!-- Elementary Schedule -->
+                <div class="grade-schedule active" id="elementary-schedule">
+                    <div class="schedule-card fade-in">
+                        <h3><i class="fas fa-sun"></i> Elementary School Daily Schedule</h3>
+                        <div class="schedule-table">
+                            <div class="schedule-row">
+                                <div class="time">8:00 - 8:30 AM</div>
+                                <div class="activity">Arrival & Morning Meeting</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">8:30 - 9:30 AM</div>
+                                <div class="activity">Language Arts</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">9:30 - 10:30 AM</div>
+                                <div class="activity">Mathematics</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">10:30 - 10:45 AM</div>
+                                <div class="activity">Morning Recess</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">10:45 - 11:30 AM</div>
+                                <div class="activity">Science/Social Studies</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">11:30 AM - 12:15 PM</div>
+                                <div class="activity">Lunch & Recess</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">12:15 - 1:00 PM</div>
+                                <div class="activity">Specialist Class (Art, Music, PE)</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">1:00 - 1:45 PM</div>
+                                <div class="activity">Reading & Writing Workshop</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">1:45 - 2:30 PM</div>
+                                <div class="activity">Project-Based Learning</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">2:30 - 3:00 PM</div>
+                                <div class="activity">Closing Circle & Dismissal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Middle School Schedule -->
+                <div class="grade-schedule" id="middle-schedule">
+                    <div class="schedule-card fade-in">
+                        <h3><i class="fas fa-cloud-sun"></i> Middle School Daily Schedule</h3>
+                        <div class="schedule-table">
+                            <div class="schedule-row">
+                                <div class="time">8:00 - 8:15 AM</div>
+                                <div class="activity">Homeroom/Advisory</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">8:15 - 9:05 AM</div>
+                                <div class="activity">Period 1: English</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">9:10 - 10:00 AM</div>
+                                <div class="activity">Period 2: Mathematics</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">10:05 - 10:55 AM</div>
+                                <div class="activity">Period 3: Science</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">11:00 - 11:50 AM</div>
+                                <div class="activity">Period 4: Social Studies</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">11:50 AM - 12:35 PM</div>
+                                <div class="activity">Lunch</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">12:40 - 1:30 PM</div>
+                                <div class="activity">Period 5: World Language</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">1:35 - 2:25 PM</div>
+                                <div class="activity">Period 6: Elective/PE</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">2:30 - 3:20 PM</div>
+                                <div class="activity">Period 7: Study Hall/Club</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">3:20 - 3:30 PM</div>
+                                <div class="activity">Dismissal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- High School Schedule -->
+                <div class="grade-schedule" id="high-schedule">
+                    <div class="schedule-card fade-in">
+                        <h3><i class="fas fa-graduation-cap"></i> High School Daily Schedule</h3>
+                        <div class="schedule-table">
+                            <div class="schedule-row">
+                                <div class="time">7:45 - 8:00 AM</div>
+                                <div class="activity">Zero Period (Elective/AP)</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">8:05 - 9:00 AM</div>
+                                <div class="activity">Period 1</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">9:05 - 10:00 AM</div>
+                                <div class="activity">Period 2</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">10:05 - 11:00 AM</div>
+                                <div class="activity">Period 3</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">11:05 AM - 12:00 PM</div>
+                                <div class="activity">Period 4</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">12:00 - 12:45 PM</div>
+                                <div="activity">Lunch</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">12:50 - 1:45 PM</div>
+                                <div class="activity">Period 5</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">1:50 - 2:45 PM</div>
+                                <div class="activity">Period 6</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">2:50 - 3:30 PM</div>
+                                <div class="activity">Office Hours/Activities</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">3:30 - 5:00 PM</div>
+                                <div class="activity">Sports/Clubs/Study</div>
+                            </div>
+                        </div>
+                        <p class="schedule-note">Note: High school schedules vary based on individual course selections. This represents a sample 6-period day.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Academic Calendar -->
+            <div class="schedule-section" id="academic">
+                <h2 class="section-title">2023-2024 Academic Calendar</h2>
+                <p class="section-subtitle">Important dates for the current school year</p>
+                
+                <div class="calendar-container fade-in">
+                    <div class="calendar-grid">
+                        <div class="calendar-month">
+                            <h3>August 2023</h3>
+                            <ul>
+                                <li><span class="date">Aug 21</span> - Teacher Work Days</li>
+                                <li><span class="date">Aug 28</span> - First Day of School</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>September 2023</h3>
+                            <ul>
+                                <li><span class="date">Sep 4</span> - Labor Day (No School)</li>
+                                <li><span class="date">Sep 15</span> - Back to School Night</li>
+                                <li><span class="date">Sep 29</span> - Early Dismissal</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>October 2023</h3>
+                            <ul>
+                                <li><span class="date">Oct 9</span> - Columbus Day (No School)</li>
+                                <li><span class="date">Oct 20</span> - End of First Quarter</li>
+                                <li><span class="date">Oct 26-27</span> - Parent-Teacher Conferences</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>November 2023</h3>
+                            <ul>
+                                <li><span class="date">Nov 10</span> - Veterans Day (No School)</li>
+                                <li><span class="date">Nov 22-24</span> - Thanksgiving Break</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>December 2023</h3>
+                            <ul>
+                                <li><span class="date">Dec 18-29</span> - Winter Break</li>
+                                <li><span class="date">Dec 22</span> - End of Second Quarter</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>January 2024</h3>
+                            <ul>
+                                <li><span class="date">Jan 1</span> - New Year's Day (No School)</li>
+                                <li><span class="date">Jan 2</span> - School Resumes</li>
+                                <li><span class="date">Jan 15</span> - MLK Day (No School)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>February 2024</h3>
+                            <ul>
+                                <li><span class="date">Feb 19</span> - Presidents' Day (No School)</li>
+                                <li><span class="date">Feb 23</span> - End of Third Quarter</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>March 2024</h3>
+                            <ul>
+                                <li><span class="date">Mar 11-15</span> - Spring Break</li>
+                                <li><span class="date">Mar 29</span> - Early Dismissal</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>April 2024</h3>
+                            <ul>
+                                <li><span class="date">Apr 1-5</span> - Standardized Testing</li>
+                                <li><span class="date">Apr 19</span> - Professional Development (No School)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>May 2024</h3>
+                            <ul>
+                                <li><span class="date">May 6-17</span> - AP Exams</li>
+                                <li><span class="date">May 27</span> - Memorial Day (No School)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="calendar-month">
+                            <h3>June 2024</h3>
+                            <ul>
+                                <li><span class="date">Jun 7</span> - Last Day for Students</li>
+                                <li><span class="date">Jun 10</span> - Graduation Ceremony</li>
+                                <li><span class="date">Jun 14</span> - End of Fourth Quarter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bell Schedule -->
+            <div class="schedule-section" id="bell">
+                <h2 class="section-title">Bell Schedule</h2>
+                <p class="section-subtitle">School start and end times by division</p>
+                
+                <div class="bell-schedule-container">
+                    <div class="bell-card fade-in">
+                        <h3><i class="fas fa-bell"></i> Regular Day Schedule</h3>
+                        <div class="bell-table">
+                            <div class="bell-row header">
+                                <div>Division</div>
+                                <div>Start Time</div>
+                                <div>End Time</div>
+                                <div>Early Dismissal</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Elementary (K-5)</div>
+                                <div>8:00 AM</div>
+                                <div>3:00 PM</div>
+                                <div>12:00 PM</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Middle School (6-8)</div>
+                                <div>8:00 AM</div>
+                                <div>3:20 PM</div>
+                                <div>12:30 PM</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>High School (9-12)</div>
+                                <div>7:45 AM*</div>
+                                <div>3:30 PM</div>
+                                <div>12:45 PM</div>
+                            </div>
+                        </div>
+                        <p class="bell-note">*High school zero period begins at 7:45 AM. Regular classes start at 8:05 AM.</p>
+                    </div>
+                    
+                    <div class="bell-card fade-in" style="animation-delay: 0.2s;">
+                        <h3><i class="fas fa-bus"></i> Transportation Schedule</h3>
+                        <div class="bell-table">
+                            <div class="bell-row header">
+                                <div>Bus Route</div>
+                                <div>Morning Pickup</div>
+                                <div>Afternoon Drop-off</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Route 1 (North)</div>
+                                <div>7:00 - 7:30 AM</div>
+                                <div>3:30 - 4:00 PM</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Route 2 (South)</div>
+                                <div>7:15 - 7:45 AM</div>
+                                <div>3:45 - 4:15 PM</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Route 3 (East)</div>
+                                <div>7:10 - 7:40 AM</div>
+                                <div>3:40 - 4:10 PM</div>
+                            </div>
+                            <div class="bell-row">
+                                <div>Route 4 (West)</div>
+                                <div>7:20 - 7:50 AM</div>
+                                <div>3:50 - 4:20 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Events Calendar -->
+            <div class="schedule-section" id="events">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Important school events and activities</p>
+                
+                <div class="events-container">
+                    <div class="events-list fade-in">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Annual Science Fair</h4>
+                                <p><i class="far fa-clock"></i> 9:00 AM - 2:00 PM | <i class="fas fa-map-marker-alt"></i> School Gymnasium</p>
+                                <p>Students showcase their science projects. Open to parents and community members.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-small">Add to Calendar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Parent-Teacher Conferences</h4>
+                                <p><i class="far fa-clock"></i> 3:00 PM - 7:00 PM | <i class="fas fa-map-marker-alt"></i> Classrooms</p>
+                                <p>Schedule meetings with teachers to discuss student progress. Sign-up required.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-small">Add to Calendar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">Nov</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>College Fair 2023</h4>
+                                <p><i class="far fa-clock"></i> 10:00 AM - 1:00 PM | <i class="fas fa-map-marker-alt"></i> Auditorium</p>
+                                <p>Representatives from 50+ universities will be available to meet with students.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-small">Add to Calendar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">17</span>
+                                <span class="month">Nov</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Fall Music Concert</h4>
+                                <p><i class="far fa-clock"></i> 6:30 PM - 8:00 PM | <i class="fas fa-map-marker-alt"></i> Performing Arts Center</p>
+                                <p>Featuring choir, band, and orchestra performances from all grade levels.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-small">Add to Calendar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">10</span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Winter Festival</h4>
+                                <p><i class="far fa-clock"></i> 4:00 PM - 7:00 PM | <i class="fas fa-map-marker-alt"></i> School Grounds</p>
+                                <p>Annual community event with food, games, and holiday activities for all ages.</p>
+                            </div>
+                            <div class="event-actions">
+                                <button class="btn btn-small">Add to Calendar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="events-calendar fade-in" style="animation-delay: 0.3s;">
+                        <h3>October 2023 Events</h3>
+                        <div class="mini-calendar">
+                            <div class="calendar-header">
+                                <button class="calendar-nav"><i class="fas fa-chevron-left"></i></button>
+                                <h4>October 2023</h4>
+                                <button class="calendar-nav"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar-weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days">
+                                <div class="other-month">25</div>
+                                <div class="other-month">26</div>
+                                <div class="other-month">27</div>
+                                <div class="other-month">28</div>
+                                <div class="other-month">29</div>
+                                <div class="other-month">30</div>
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>9</div>
+                                <div>10</div>
+                                <div>11</div>
+                                <div>12</div>
+                                <div>13</div>
+                                <div>14</div>
+                                <div class="event-day">15</div>
+                                <div>16</div>
+                                <div>17</div>
+                                <div>18</div>
+                                <div>19</div>
+                                <div>20</div>
+                                <div>21</div>
+                                <div class="event-day">22</div>
+                                <div>23</div>
+                                <div>24</div>
+                                <div>25</div>
+                                <div>26</div>
+                                <div>27</div>
+                                <div>28</div>
+                                <div>29</div>
+                                <div>30</div>
+                                <div>31</div>
+                                <div class="other-month">1</div>
+                                <div class="other-month">2</div>
+                                <div class="other-month">3</div>
+                                <div class="other-month">4</div>
+                            </div>
+                        </div>
+                        <div class="calendar-legend">
+                            <div class="legend-item">
+                                <div class="legend-color event-color"></div>
+                                <span>School Event</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color holiday-color"></div>
+                                <span>Holiday/No School</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Bright Minds</span> Academy
+                    </a>
+                    <p class="footer-text">Providing excellence in education since 1995. Preparing students for a bright future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs.html#elementary">Elementary School</a></li>
+                        <li><a href="programs.html#middle">Middle School</a></li>
+                        <li><a href="programs.html#high">High School</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#advanced">Advanced Placement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> KVDA, Eldoret, Kenya</li>
+                        <li><i class="fas fa-phone"></i> + 2547 675 890</li>
+                        <li><i class="fas fa-envelope"></i> info@brightminds.edu</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

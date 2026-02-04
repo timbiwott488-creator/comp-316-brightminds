@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bright Minds Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Bright Minds</span> Academy
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#" class="btn btn-outline">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Contact Us</h1>
+            <p class="page-subtitle fade-in" style="animation-delay: 0.2s;">Get in touch with Bright Minds Academy</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container slide-in-left">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions? We're here to help. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="academics">Academic Questions</option>
+                                <option value="schedule">Schedule Information</option>
+                                <option value="facilities">School Facilities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for updates and announcements</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-container slide-in-right">
+                    <div class="contact-info-card">
+                        <h2>Contact Information</h2>
+                        <p>We'd love to hear from you. Here's how you can reach us.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Our Location</h3>
+                                    <p>123 Education Avenue<br>City, State 12345<br>United States</p>
+                                    <a href="#" class="map-link">View on Google Maps <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Phone Numbers</h3>
+                                    <p><strong>Main Office:</strong> (555) 123-4567</p>
+                                    <p><strong>Admissions:</strong> (555) 123-4568</p>
+                                    <p><strong>Fax:</strong> (555) 123-4569</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email Addresses</h3>
+                                    <p><strong>General Inquiries:</strong> info@brightminds.edu</p>
+                                    <p><strong>Admissions:</strong> admissions@brightminds.edu</p>
+                                    <p><strong>Registrar:</strong> registrar@brightminds.edu</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Office Hours</h3>
+                                    <p><strong>Monday - Friday:</strong> 8:00 AM - 4:00 PM</p>
+                                    <p><strong>Saturday:</strong> 9:00 AM - 12:00 PM (Admissions Only)</p>
+                                    <p><strong>Sunday:</strong> Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <div class="emergency-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="emergency-text">
+                            <h3>Emergency Contact</h3>
+                            <p>For emergencies during school hours, please call the main office at <strong>(555) 123-4567</strong>. After hours, contact security at <strong>(555) 987-6543</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Our Campus</h2>
+            <p class="section-subtitle">Visit us at our location in the heart of the community</p>
+            
+            <div class="map-container fade-in">
+                <!-- Mock Map -->
+                <div class="mock-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interactive Campus Map</h3>
+                        <p>This would display an interactive Google Maps view of our campus location.</p>
+                        <button class="btn btn-secondary">Open in Google Maps</button>
+                    </div>
+                </div>
+                
+                <div class="map-legend">
+                    <h4>Campus Buildings</h4>
+                    <ul>
+                        <li><span class="legend-color admin-color"></span> Administration Building</li>
+                        <li><span class="legend-color elementary-color"></span> Elementary School</li>
+                        <li><span class="legend-color middle-color"></span> Middle School</li>
+                        <li><span class="legend-color high-color"></span> High School</li>
+                        <li><span class="legend-color library-color"></span> Library & Media Center</li>
+                        <li><span class="legend-color gym-color"></span> Gymnasium & Athletics</li>
+                        <li><span class="legend-color arts-color"></span> Performing Arts Center</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="departments">
+        <div class="container">
+            <h2 class="section-title">Contact Specific Departments</h2>
+            <p class="section-subtitle">Get in touch with the right team for your inquiry</p>
+            
+            <div class="departments-grid">
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Admissions</h3>
+                    <p>Questions about enrollment, requirements, and the application process.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> admissions@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4568</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Admissions</a>
+                </div>
+                
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Academics</h3>
+                    <p>Curriculum, course selection, academic policies, and tutoring resources.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> academics@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4570</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Academics</a>
+                </div>
+                
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Transportation</h3>
+                    <p>Bus routes, schedules, and transportation policies for students.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> transportation@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4571</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Transportation</a>
+                </div>
+                
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Services</h3>
+                    <p>School meals, lunch accounts, dietary restrictions, and cafeteria information.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> foodservices@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4572</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Food Services</a>
+                </div>
+                
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Health Services</h3>
+                    <p>School nurse, immunizations, health forms, and medical accommodations.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> health@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4573</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Health Services</a>
+                </div>
+                
+                <div class="department-card scale-hover">
+                    <div class="department-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Counseling</h3>
+                    <p>Academic guidance, college counseling, and student support services.</p>
+                    <div class="department-contact">
+                        <p><i class="fas fa-envelope"></i> counseling@brightminds.edu</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4574</p>
+                    </div>
+                    <a href="#" class="btn btn-small">Contact Counseling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+            
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>What are the school hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>School hours vary by division. Elementary school runs from 8:00 AM to 3:00 PM, middle school from 8:00 AM to 3:20 PM, and high school from 7:45 AM to 3:30 PM. Early dismissal days end at 12:00 PM for elementary, 12:30 PM for middle school, and 12:45 PM for high school.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.1s;">
+                    <button class="faq-question">
+                        <span>How do I schedule a campus tour?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can schedule a campus tour by contacting our admissions office at (555) 123-4568 or admissions@brightminds.edu. Tours are typically available Monday through Friday at 9:00 AM and 1:00 PM. We also offer special open house events throughout the year.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.2s;">
+                    <button class="faq-question">
+                        <span>What is the application deadline?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For the 2024-2025 school year, the priority application deadline is January 15, 2024. Applications received after this date will be considered on a space-available basis. We encourage early application as some grades fill quickly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.3s;">
+                    <button class="faq-question">
+                        <span>Do you offer financial aid?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Bright Minds Academy offers need-based financial aid to qualified families. Approximately 30% of our students receive some form of financial assistance. The financial aid application deadline is February 1, 2024. Contact our admissions office for more information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in" style="animation-delay: 0.4s;">
+                    <button class="faq-question">
+                        <span>What COVID-19 safety measures are in place?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We follow all local health department guidelines. Current measures include enhanced cleaning protocols, improved ventilation systems, and availability of hand sanitizer throughout campus. We monitor local conditions and adjust protocols as needed to ensure student and staff safety.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Bright Minds</span> Academy
+                    </a>
+                    <p class="footer-text">Providing excellence in education since 1995. Preparing students for a bright future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs.html#elementary">Elementary School</a></li>
+                        <li><a href="programs.html#middle">Middle School</a></li>
+                        <li><a href="programs.html#high">High School</a></li>
+                        <li><a href="programs.html#extracurricular">Extracurricular</a></li>
+                        <li><a href="programs.html#advanced">Advanced Placement</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                         <li><i class="fas fa-map-marker-alt"></i> KVDA, Eldoret, Kenya</li>
+                        <li><i class="fas fa-phone"></i> + 2547 675 890</li>
+                        <li><i class="fas fa-envelope"></i> info@brightminds.edu</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bright Minds Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
